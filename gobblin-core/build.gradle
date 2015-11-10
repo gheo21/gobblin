@@ -40,7 +40,8 @@ dependencies {
   compile externalDependency.findBugs
   compile externalDependency.mockito
   compile externalDependency.lombok
-
+  compile "org.apache.parquet:parquet-hadoop:1.8.1"
+  compile "org.apache.parquet:parquet-avro:1.8.1"
 
   if (project.hasProperty('useHadoop2')) {
     compile externalDependency.avroMapredH2
